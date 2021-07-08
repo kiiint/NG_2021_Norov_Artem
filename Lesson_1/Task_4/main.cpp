@@ -10,7 +10,7 @@ int main()
     if(money > 999) {
         if(money < 1000000)
             cout << "Kruto";
-        if(money > 1000000)
+        if(money > 999999)
             cout << "Da ti millioner";
     }
     if (money < 1000){
