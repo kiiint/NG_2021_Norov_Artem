@@ -11,7 +11,7 @@ int main()
     for (int i = 0; i<10; i++){
         cards[i]=0;
     }
-    for ( ; ; ){
+    while(true){
         cout << "Enter number of your card:";
         cin >> nomer;
         cout << "How much to put?";
