@@ -13,7 +13,7 @@ int main()
 
     for (int i = 0; symbols[i] != 0; i++)
     {
-        if (symbols[i] >= 'a' && symbols[i] <= 'z'){
+        if ((symbols[i] >= 'a' && symbols[i] <= 'z') || (symbols[i] >= 'A' && symbols[i] <= 'Z')){
             length++;
         }else {
             if (length > maxlength){
