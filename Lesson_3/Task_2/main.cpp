@@ -12,11 +12,16 @@ int main()
         cards[i]=0;
     }
     while(true){
-        cout << "Enter number of your card:";
-        cin >> nomer;
+        do{
+            cout << "Enter number of your card:";
+            cin >> nomer;
+            if(nomer < 1 || nomer > 10){
+                cout << "Could not find this card" << endl;
+            }
+        }while (nomer < 1 || nomer > 10);
         cout << "How much to put?";
         cin >> money;
-        cards[nomer] = cards[nomer] + money;
+        cards[nomer-1] = cards[nomer-1] + money;
         for (int i = 0; i<10; i++){
             cout << cards[i] << " ";
         }
