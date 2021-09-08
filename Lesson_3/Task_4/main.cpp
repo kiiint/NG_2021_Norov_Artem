@@ -5,6 +5,7 @@ using namespace std;
 int main()
 {
     int numbers[20];
+    int space = 0;
     for (int i = 0; i<20; i++){
         numbers[i] = 0;
     }
@@ -21,13 +22,6 @@ int main()
     for (int i = 0; i<20; i++){
         if(numbers[i] > maxc){
             maxc = numbers[i];
-        }
-    }
-    int minc = numbers[0];
-    int space = 0;
-    for (int i = 0; i<20; i++){
-        if(numbers[i] > minc){
-            minc = numbers[i];
         }
     }
     for (int i = 0; i<20; i++){
