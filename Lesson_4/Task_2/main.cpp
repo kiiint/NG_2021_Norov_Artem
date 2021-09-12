@@ -22,12 +22,6 @@ int main()
             }
             length = 0;
         }
-        if(symbols[i + 1] == 0){
-            if (length > maxlength){
-                maxlength = length;
-                word = i - maxlength + 1;
-            }
-        }
     }
     cout << "Result: ";
     for(int i = 0; i < maxlength; i++){
