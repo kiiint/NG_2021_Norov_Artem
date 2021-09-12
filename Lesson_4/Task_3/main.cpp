@@ -11,8 +11,10 @@ int main()
     cout << "Result: ";
     for (int i = 0; i < symbols[i]; i++){
         if(symbols[i] >= 'a' && symbols[i] <= 'z'){
-            symbols[i] -= 32;
+            cout << (char)(symbols[i] - 32);
+        }else{
+            cout << symbols[i];
         }
-        cout << symbols[i];
+
     }
 }
