@@ -9,6 +9,7 @@ int main()
     for (int i = 0; i<20; i++){
         numbers[i] = 0;
     }
+    int maxc = numbers[0];
     int i = 0;
     do{
         cout << "Enter number #"<<i+1<<":";
@@ -16,14 +17,12 @@ int main()
         if (numbers [i] == 0){
             break;
         }
-        i++;
-    }while(i<20);
-    int maxc = numbers[0];
-    for (int i = 0; i<20; i++){
         if(numbers[i] > maxc){
             maxc = numbers[i];
         }
-    }
+        i++;
+    }while(i<20);
+
     for (int i = 0; i<20; i++){
         for (int c = 1; c < maxc - numbers[i]  ; c++)
         space = (maxc - numbers[i])/2;
